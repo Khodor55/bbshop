@@ -1,0 +1,71 @@
+[
+  {
+    "name": "laptop to32",
+    "desc": "lorem de la manger kodor tkancl kkdj manapolisre",
+    "type": "laptop",
+    "img": "img/product_1.webp",
+    "price":799,
+    "old":999
+        ,"quantity": 1
+  },
+  {
+    "name": "hp cori344",
+    "desc": "lorem de la manger kodor tkancl kkdj manapolisre",
+    "type": "laptop",
+    "img": "img/product_2.webp",
+    "price": 499
+        ,"quantity": 1
+  },
+  {
+    "name": "windows 10pro",
+    "desc": "lorem de la manger kodor tkancl kkdj manapolisre",
+    "type": "laptop",
+    "img": "img/product_3.webp",
+    "price": 200,
+    "old": 230
+        ,"quantity": 1
+  },
+  {
+    "name": "windows 10pro",
+    "desc": "lorem de la manger kodor tkancl kkdj manapolisre",
+    "type": "laptop",
+    "img": "img/product_5.webp",
+    "price":600,
+    "old":999
+    ,"quantity": 1
+  },
+  {
+    "name": "hp to55",
+    "desc": "lorem de la manger kodor tkancl kkdj manapolisre",
+    "type": "laptop",
+    "img": "img/product_6.webp",
+    "price":499
+    ,"quantity": 1
+  },
+  {
+    "name": "xoime e05",
+    "desc": "lorem de la manger kodor tkancl kkdj manapolisre",
+    "type": "moblie",
+    "img": "img/product_7.webp",
+    "price":150,
+    "old":200  
+        ,"quantity": 1
+},
+  {
+    "name": "S25 ultra",
+    "desc": "lorem de la manger kodor tkancl kkdj manapolisre",
+    "type": "moblie",
+    "img": "img/product_8.webp",
+    "price":1100,
+    "old":1400
+        ,"quantity": 1
+  },
+  {
+    "name": "iphon 15pro",
+    "desc": "lorem de la manger kodor tkancl kkdj manapolisre",
+    "type": "moblie",
+    "img": "img/product_9.webp",
+    "price":800  
+        ,"quantity": 1
+}
+]

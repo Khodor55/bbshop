@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BB SHOP</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/logo.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="top">
+          <div class="logo">
+            <a href="index.html">
+
+                <img src="img/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="icons">
+            <div class="shop_icons icon" onclick="openItemCard()">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="shop_count"> 0 </span>
+            </div>
+            <div class="login_icon icon">
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+           
+          </div>
+        </div>
+        <div class="bottom">
+            <div class="category">
+             <div class="category_btn" onclick="showCategoryBtn()">
+  show categories <i class="fa-solid fa-chevron-down"></i>
+</div>
+
+                <div class="category_nav">
+                    <a href="">all categories</a>
+                    <a href=""><i class="fa-solid fa-laptop"></i> laptop</a>
+                    <a href=""><i class="fa-solid fa-bolt-lightning"></i> charges</a>
+                    <a href=""><i class="fa-solid fa-mobile"></i> mobiles</a>
+                    <a href=""><i class="fa-solid fa-keyboard"></i> keaboard</a>
+                    <a href=""><i class="fa-solid fa-computer-mouse"></i> mouse</a>
+                  
+                </div>
+            </div>
+    <div class="search">
+        <form action="">
+            <input type="search" id="search_input" placeholder="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+      </div>
+    </header>
+    <section class="item_card">
+        <div class="close_item_card" onclick="closeItemCard()"><i class="fa-solid fa-circle-xmark"></i></div>
+        <div class="top">
+            <h1>Item in card</h1>
+          <span>Item count:  <span class="item_count">0</span></span>
+        </div>
+        <div class="center">
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/product_1.webp" alt="">
+                </div>
+                <h3>laptop</h3>
+                <div class="content">
+                    <span>100$</span>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom">
+            <button>check out</button>
+            <span>total: <span class="total">100$</span> </span>
+        </div>
+    </section>
+   <section class="hero_category">
+    <div class="container">
+
+        <div class="card">
+            <a href="">
+                <div class="img">
+        <div class="abso_card">
+            <h2>laptops</h2>
+        </div>
+
+        <img src="img/ca_1.webp" alt="">
+    </div>
+                <p>laptops</p>
+            </a>
+            </div>
+   
+        <div class="card">
+            <a href="">
+                <div class="img">
+        <div class="abso_card">
+            <h2>Phones</h2>
+        </div>
+
+        <img src="img/ca_3.jpg" alt="">
+    </div>
+                <p>Phones</p>
+            </a>
+            </div>
+        <div class="card">
+            <a href="">
+                <div class="img">
+        <div class="abso_card">
+            <h2>keaboard</h2>
+        </div>
+
+        <img src="img/ca_4jpg.jpg" alt="">
+    </div>
+                <p>keaboard</p>
+            </a>
+            </div>
+   
+        <div class="card">
+            <a href="">
+                <div class="img">
+        <div class="abso_card">
+            <h2>mouse</h2>
+        </div>
+
+        <img src="img/ca_5.webp" alt="">
+    </div>
+                <p>mouse</p>
+            </a>
+            </div>
+   
+    </div>
+    </section>
+<section class="featured">
+    <div class="container">
+        <div class="sec_title">
+            <h1>featured</h1>
+        </div>
+        <div class="featured_cards">
+            <div class="card">
+                <i class="fa-solid fa-van-shuttle"></i>
+                <div class="content">
+                    <h3>free delevery</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, impedit.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <div class="content">
+                    <h3>cash payment</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, impedit.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <i class="fa-solid fa-truck-fast"></i>                <div class="content">
+                    <h3>fast service</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, impedit.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <i class="fa-solid fa-location-dot"></i>            <div class="content">
+                    <h3>Multiple branches</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, impedit.</p>
+                </div>
+            </div>
+  
+
+        </div>
+        
+    </div>
+</section>
+<section class="sale">
+    <div class="container">
+
+        <div class="sec_title">
+            <h1>sales</h1>
+        </div>
+        <div class="products product_sales">
+          
+          
+         
+        </div>
+    </div>
+</section>
+<section class="delevery">
+ <div class="container">
+    <div class="sec_title">
+        <h1>delevery</h1>
+    </div>
+    <div class="content">
+        <div class="text">
+            <h1>delevery free for all lebanon</h1>
+            <p><i class="fa-solid fa-location-dot"></i> al quosayba-nabatiyeh</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quasi. Cupiditate voluptas ducimus commodi nam doloremque veritatis unde minus est.</p>
+            <a href=""><i class="fa-brands fa-whatsapp"></i> chat in whatsapp</a>
+            <a href=""><i class="fa-solid fa-location-dot"></i> show loaction</a>
+        </div>
+        <div class="img">
+            <img src="img/delevery.png" alt="">
+        </div>
+    </div>
+ </div>
+</section>
+<script src="js/sales.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiperL.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
