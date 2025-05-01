@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BB SHOP</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/logo.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="top">
+          <div class="logo">
+            <a href="index.html">
+
+                <img src="img/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="icons">
+            <div class="shop_icons icon" onclick="openItemCard()">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="shop_count"> 0 </span>
+            </div>
+            <div class="login_icon icon">
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+           
+          </div>
+        </div>
+        <div class="bottom">
+            <div class="category">
+             <div class="category_btn" onclick="showCategoryBtn()">
+  show categories <i class="fa-solid fa-chevron-down"></i>
+</div>
+
+                <div class="category_nav">
+                    <a href="">all categories</a>
+                    <a href=""><i class="fa-solid fa-laptop"></i> laptop</a>
+                    <a href=""><i class="fa-solid fa-bolt-lightning"></i> charges</a>
+                    <a href=""><i class="fa-solid fa-mobile"></i> mobiles</a>
+                    <a href=""><i class="fa-solid fa-keyboard"></i> keaboard</a>
+                    <a href=""><i class="fa-solid fa-computer-mouse"></i> mouse</a>
+                  
+                </div>
+            </div>
+    <div class="search">
+        <form action="">
+            <input type="search" id="search_input" placeholder="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+      </div>
+    </header>
+    <section class="item_card">
+        <div class="close_item_card" onclick="closeItemCard()"><i class="fa-solid fa-circle-xmark"></i></div>
+        <div class="top">
+            <h1>Item in card</h1>
+          <span>Item count:  <span class="item_count">0</span></span>
+        </div>
+        <div class="center">
+         
+          
+
+        </div>
+        <div class="bottom">
+            <button>check out</button>
+            <span>total: <span class="total">100$</span> </span>
+        </div>
+    </section>
+<section class="sale">
+    <div class="container">
+
+        <div class="sec_title">
+            <h1>All items</h1>
+        </div>
+        <div class="products phone">
+          
+          
+         
+        </div>
+    </div>
+</section>
+
+<script src="js/phone.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiperL.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
