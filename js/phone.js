@@ -1,11 +1,17 @@
 fetch('items.json')
 .then(response => response.json())
 .then(data => {
-let product_sales = document.querySelector('.product_sales');
-data.forEach((item, index) => {
-    if(item.old){
+let phone = document.querySelector('.phone');
 
-        product_sales.innerHTML +=`
+data.forEach((item, index) => {
+    let old_is
+    if(item.type == "moblie"){
+  if(item.old){
+old_is = item.old + '$'
+  }else{
+    old_is ='' 
+  }
+        phone.innerHTML +=`
         
           <div class="card">
                     <div class="img">
@@ -15,7 +21,7 @@ data.forEach((item, index) => {
                         <div class="text">
                             <h1>${item.name}</h1>
                             <p>${item.desc}</p>
-                            <span>${item.price}$ <small>${item.old}</small></span>
+                            <span>${item.price}$ <small>${old_is}</small></span>
                         </div>
                         <div class="btns">
                        <!-- <div class='quantity'>
@@ -30,7 +36,7 @@ data.forEach((item, index) => {
                 </div>
         
         `
-    }
+}
 })
 })
 .catch(error => {

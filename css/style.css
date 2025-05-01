@@ -227,7 +227,7 @@ header .container .bottom .search form button:hover {
   z-index: 3;
   top: 0;
   right: -800px;
-  width: 400px;
+  width: 500px;
   background-color: white;
   padding: 30px;
   margin: 20px;
@@ -415,57 +415,21 @@ header .container .bottom .search form button:hover {
   color: rgba(0, 0, 0, 0.557);
   font-weight: bold;
 }
-@media (max-width: 600px) {
-  header .container .bottom {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    justify-content: end;
-  }
-  header .container .bottom .search {
-    width: 100%;
-  }
-  .item_card {
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    right: -800px;
-    width: 100%;
-    background-color: white;
-    padding: 30px;
-    margin: 0px;
-    box-shadow: 0px 0px 10px var(--border-light);
-    border-radius: 0px;
-    transition: 0.5s;
-    z-index: 300;
-  }
-  .close_item_card {
-    right: 5px;
-    top: 5px;
-  }
-  .delevery .content{
-    flex-direction: column;
-    justify-content: start;
-  }
-  .delevery .content .text{
-    width: 100%;
-  }
 
-}
 /* products */
 .products {
   display: flex;
   padding: 10px;
-  overflow-x: auto;
+flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 .products .card {
-  width: 230px;
+  width: 200px;
   background-color: white;
   padding: 20px;
   box-shadow: 0px 0px 4px var(--border-light);
   border-radius: 5px;
-  min-width: 230px;
 
 }
 .products .card .content {
@@ -570,4 +534,46 @@ transition: 0.3s;
 }
 .delevery .content a:hover{
   background-color: #1ab66d;
+}
+@media (max-width: 600px) {
+  header .container .bottom {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    justify-content: end;
+  }
+  header .container .bottom .search {
+    width: 100%;
+  }
+  .item_card {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: -800px;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    margin: 0px;
+    box-shadow: 0px 0px 10px var(--border-light);
+    border-radius: 0px;
+    transition: 0.5s;
+    z-index: 300;
+  }
+  .close_item_card {
+    right: 5px;
+    top: 5px;
+  }
+  .delevery .content{
+    flex-direction: column;
+    justify-content: start;
+  }
+  .delevery .content .text{
+    width: 100%;
+  }
+  .center .card{
+    flex-direction: column;
+    gap: 20px
+    ;
+  }
+
 }
